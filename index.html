@@ -25,6 +25,7 @@
     <link href="assets/css/unit-test.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+
     <!-- ========== End Stylesheet ========== -->
 
 </head>
@@ -33,7 +34,7 @@
 
     <!-- Header 
     ============================================= -->
-    
+
     <div class="preloader">
         <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
             <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
@@ -41,14 +42,17 @@
 
         <div class="preloader-heading">
             <div class="load-text">
-                <span>
-                    <!-- <img src="assets/img/white-color.png" alt="Logo" width="200px" height="200px"> -->
-                     Loading
-                </span>
-                
+                <span>L</span>
+                <span>o</span>
+                <span>a</span>
+                <span>d</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>
             </div>
         </div>
     </div>
+    <!-- Preloader Area End -->
 
     <!-- Preloader Area End -->
 
@@ -71,7 +75,7 @@
             <!-- End Top Search -->
 
 
-            <div class="container nav-box d-flex justify-content-between align-items-center">            
+            <div class="container nav-box d-flex justify-content-between align-items-center">
 
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
@@ -79,26 +83,21 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/my_logo.png" class="logo" alt="Logo">
+                        <img id="logo" src="assets/img/my_logo.png" class="logo" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
-
+            
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
-
-                    <img src="assets/img/my_logo.png" alt="Logo">
+                    <img id="logo-collapse" src="assets/img/my_logo.png" class="logo" alt="Logo">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-times"></i>
                     </button>
-                    
+            
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="index.html">Home Version Light</a></li>
-                                <li><a href="index-dark.html">Home Version Dark</a></li>
-                            </ul>
+                        <li>
+                            <a href="#" class="smooth-menu active">Home</a>
                         </li>
                         <li>
                             <a class="smooth-menu" href="#services">Services</a>
@@ -113,11 +112,11 @@
                             <a class="smooth-menu" href="#pricing">Pricing</a>
                         </li>
                         <li>
-                            <a class="smooth-menu" href="#contact">contact</a>
+                            <a class="smooth-menu" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
-
+            
                 <div class="nav-right">
                     <div class="attr-right">
                         <!-- Start Atribute Navigation -->
@@ -126,12 +125,19 @@
                                 <li class="button">
                                     <a class="smooth-menu" href="#contact">Let's Talk <i class="fas fa-comment-alt"></i></a>
                                 </li>
+                                <li class="theme-toggle-nav">
+                                    <a href="javascript:void(0);" id="theme-toggle-link" title="Toggle Dark Mode">
+                                        <i id="theme-toggle-icon" class="fas fa-moon"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <!-- End Atribute Navigation -->
                     </div>
                 </div>
-            </div>   
+            </div>
+            
+
 
             <!-- Overlay screen for menu -->
             <div class="overlay-screen"></div>
@@ -167,11 +173,16 @@
                                 </span>
                             </h2>
                             <p>
-                                Hi, my name is Abdisalan Abdukadir, and I have been a passionate full-stack developer for several years. I have dedicated my time to mastering front-end and back-end technologies, developing websites using HTML, CSS, JavaScript, Python, and PHP. Since 2021, I have worked as a freelance developer, creating user-friendly and responsive websites for small businesses.
+                                Hi, my name is Abdisalan Abdukadir, and I have been a passionate full-stack developer
+                                for several years. I have dedicated my time to mastering front-end and back-end
+                                technologies, developing websites using HTML, CSS, JavaScript, Python, and PHP. Since
+                                2021, I have worked as a freelance developer, creating user-friendly and responsive
+                                websites for small businesses.
                             </p>
                             <div class="flex-social mt-40">
                                 <div class="button">
-                                    <a class="btn-style-regular" href="#contact"><span>Hire Me Now</span> <i class="fas fa-arrow-right"></i></a>
+                                    <a class="btn-style-regular" href="#contact"><span>Hire Me Now</span> <i
+                                            class="fas fa-arrow-right"></i></a>
                                 </div>
                                 <ul class="social-info">
                                     <li>
@@ -241,9 +252,13 @@
                 <div class="col-lg-7 pl-80 pl-md-15 pl-xs-15">
                     <div class="about-style-one-info">
                         <p>
-                            As a skilled web developer, I specialize in creating responsive, user-friendly websites with a focus on modern design and efficient code. I excel in front-end development, with a deep understanding of HTML, CSS, JavaScript, and various frameworks. My passion is turning ideas into functional and aesthetically pleasing digital experiences.
+                            As a skilled web developer, I specialize in creating responsive, user-friendly websites with
+                            a focus on modern design and efficient code. I excel in front-end development, with a deep
+                            understanding of HTML, CSS, JavaScript, and various frameworks. My passion is turning ideas
+                            into functional and aesthetically pleasing digital experiences.
                         </p>
-                        <a class="btn-style-regular btn-border" href="#"><span>Learn More</span> <i class="fas fa-arrow-right"></i></a>
+                        <a class="btn-style-regular btn-border" href="#"><span>Learn More</span> <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -253,7 +268,8 @@
                     <div class="col-lg-8 pr-60 pr-md-15 pr-xs-15">
                         <div class="img-container">
                             <img src="assets/img/about/1.jpg" alt="Image Not Found">
-                            <a href="https://www.youtube.com/watch?v=aTC_RNYtEb0" class="popup-youtube video-play-button">
+                            <a href="https://www.youtube.com/watch?v=aTC_RNYtEb0"
+                                class="popup-youtube video-play-button">
                                 <i class="fas fa-play"></i>
                                 <div class="effect"></div>
                             </a>
@@ -293,12 +309,13 @@
                             Continue indulged speaking the was horrible for domestic position. Seeing get rather.
                         </p>
                         <a href="services-details.html" class="btn-style-four">
-                            <div class="icon"><img src="assets/img/icon/arrow.png" alt="Image Not Found"></div> Read More
+                            <div class="icon"><img src="assets/img/icon/arrow.png" alt="Image Not Found"></div> Read
+                            More
                         </a>
                     </div>
                 </div>
                 <!-- End Single Item -->
-                 <!-- Single Item -->
+                <!-- Single Item -->
                 <div class="col-xl-3 col-md-6 mb-30 active wow fadeInUp" data-wow-delay="200ms">
                     <div class="service-style-one-item active">
                         <img src="assets/img/icon/2.png" alt="Image Not Found">
@@ -307,12 +324,13 @@
                             Continue indulged speaking the was horrible for domestic position. Seeing get rather.
                         </p>
                         <a href="services-details.html" class="btn-style-four">
-                            <div class="icon"><img src="assets/img/icon/arrow.png" alt="Image Not Found"></div> Read More
+                            <div class="icon"><img src="assets/img/icon/arrow.png" alt="Image Not Found"></div> Read
+                            More
                         </a>
                     </div>
                 </div>
                 <!-- End Single Item -->
-                 <!-- Single Item -->
+                <!-- Single Item -->
                 <div class="col-xl-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
                     <div class="service-style-one-item">
                         <img src="assets/img/icon/3.png" alt="Image Not Found">
@@ -321,12 +339,13 @@
                             Continue indulged speaking the was horrible for domestic position. Seeing get rather.
                         </p>
                         <a href="services-details.html" class="btn-style-four">
-                            <div class="icon"><img src="assets/img/icon/arrow.png" alt="Image Not Found"></div> Read More
+                            <div class="icon"><img src="assets/img/icon/arrow.png" alt="Image Not Found"></div> Read
+                            More
                         </a>
                     </div>
                 </div>
                 <!-- End Single Item -->
-                 <!-- Single Item -->
+                <!-- Single Item -->
                 <div class="col-xl-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="600ms">
                     <div class="service-style-one-item">
                         <img src="assets/img/icon/4.png" alt="Image Not Found">
@@ -335,7 +354,8 @@
                             Continue indulged speaking the was horrible for domestic position. Seeing get rather.
                         </p>
                         <a href="services-details.html" class="btn-style-four">
-                            <div class="icon"><img src="assets/img/icon/arrow.png" alt="Image Not Found"></div> Read More
+                            <div class="icon"><img src="assets/img/icon/arrow.png" alt="Image Not Found"></div> Read
+                            More
                         </a>
                     </div>
                 </div>
@@ -348,7 +368,7 @@
     <!-- Start Portfolio 
     ============================================= -->
     <div id="portfolio" class="portfolio-style-one-area default-padding bg-gray">
-        
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -381,7 +401,8 @@
                                                 </ul>
                                             </div>
                                             <div class="icon">
-                                                <a href="project-details.html"><i class="fas fa-long-arrow-right"></i></a>
+                                                <a href="project-details.html"><i
+                                                        class="fas fa-long-arrow-right"></i></a>
                                             </div>
                                         </div>
                                         <h4><a href="project-details.html">Document manager application</a></h4>
@@ -406,7 +427,8 @@
                                                 </ul>
                                             </div>
                                             <div class="icon">
-                                                <a href="project-details.html"><i class="fas fa-long-arrow-right"></i></a>
+                                                <a href="project-details.html"><i
+                                                        class="fas fa-long-arrow-right"></i></a>
                                             </div>
                                         </div>
                                         <h4><a href="project-details.html">Dynamic mobile app development</a></h4>
@@ -431,10 +453,12 @@
                                                 </ul>
                                             </div>
                                             <div class="icon">
-                                                <a href="project-details.html"><i class="fas fa-long-arrow-right"></i></a>
+                                                <a href="project-details.html"><i
+                                                        class="fas fa-long-arrow-right"></i></a>
                                             </div>
                                         </div>
-                                        <h4><a href="project-details.html">Printable professional brochure templates</a></h4>
+                                        <h4><a href="project-details.html">Printable professional brochure templates</a>
+                                        </h4>
                                     </div>
                                 </div>
                             </div>
@@ -456,15 +480,17 @@
                                                 </ul>
                                             </div>
                                             <div class="icon">
-                                                <a href="project-details.html"><i class="fas fa-long-arrow-right"></i></a>
+                                                <a href="project-details.html"><i
+                                                        class="fas fa-long-arrow-right"></i></a>
                                             </div>
                                         </div>
-                                        <h4><a href="project-details.html">Create stunning product flexible mockups</a></h4>
+                                        <h4><a href="project-details.html">Create stunning product flexible mockups</a>
+                                        </h4>
                                     </div>
                                 </div>
                             </div>
                             <!-- End Single Item -->
-                             <!-- Single Item -->
+                            <!-- Single Item -->
                             <div class="gallery-item">
                                 <div class="gallery-style-one">
                                     <img src="assets/img/projects/5.jpg" alt="Thumb">
@@ -481,7 +507,8 @@
                                                 </ul>
                                             </div>
                                             <div class="icon">
-                                                <a href="project-details.html"><i class="fas fa-long-arrow-right"></i></a>
+                                                <a href="project-details.html"><i
+                                                        class="fas fa-long-arrow-right"></i></a>
                                             </div>
                                         </div>
                                         <h4><a href="project-details.html">Decor design vectors illustrations</a></h4>
@@ -489,7 +516,7 @@
                                 </div>
                             </div>
                             <!-- End Single Item -->
-                             <!-- Single Item -->
+                            <!-- Single Item -->
                             <div class="gallery-item">
                                 <div class="gallery-style-one">
                                     <img src="assets/img/projects/4.jpg" alt="Thumb">
@@ -506,7 +533,8 @@
                                                 </ul>
                                             </div>
                                             <div class="icon">
-                                                <a href="project-details.html"><i class="fas fa-long-arrow-right"></i></a>
+                                                <a href="project-details.html"><i
+                                                        class="fas fa-long-arrow-right"></i></a>
                                             </div>
                                         </div>
                                         <h4><a href="project-details.html">Making smart software smartphones</a></h4>
@@ -592,7 +620,7 @@
                     </div>
                 </div>
                 <!-- End Single item -->
-                 <!-- Single item -->
+                <!-- Single item -->
                 <div class="funfact-style-two-item wow fadeInUp" data-wow-delay="300ms">
                     <div class="icon">
                         <img src="assets/img/icon/photoshop.png" alt="Image Not Found">
@@ -606,7 +634,7 @@
                     </div>
                 </div>
                 <!-- End Single item -->
-                 <!-- Single item -->
+                <!-- Single item -->
                 <div class="funfact-style-two-item wow fadeInUp" data-wow-delay="400ms">
                     <div class="icon">
                         <img src="assets/img/icon/diamon.png" alt="Image Not Found">
@@ -620,7 +648,7 @@
                     </div>
                 </div>
                 <!-- End Single item -->
-                 <!-- Single item -->
+                <!-- Single item -->
                 <div class="funfact-style-two-item wow fadeInUp" data-wow-delay="500ms">
                     <div class="icon">
                         <img src="assets/img/icon/ai.png" alt="Image Not Found">
@@ -634,7 +662,7 @@
                     </div>
                 </div>
                 <!-- End Single item -->
-           </div>
+            </div>
         </div>
     </div>
     <!-- End Fun Factor -->
@@ -664,13 +692,16 @@
                                 </div>
                                 <div class="timeline-body">
                                     <p>
-                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit, laoreet smart software.
+                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam
+                                        sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                        hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit,
+                                        laoreet smart software.
                                     </p>
                                 </div>
-                             </div>
+                            </div>
                             <!-- End Single Item -->
-                             <!-- Single Item -->
-                             <div class="timeline-style-one-item wow fadeInUp">
+                            <!-- Single Item -->
+                            <div class="timeline-style-one-item wow fadeInUp">
                                 <div class="timeline-header">
                                     <div class="left">
                                         <h4>Full Stack Web Developer</h4>
@@ -684,13 +715,16 @@
                                 </div>
                                 <div class="timeline-body">
                                     <p>
-                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit, laoreet smart software.
+                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam
+                                        sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                        hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit,
+                                        laoreet smart software.
                                     </p>
                                 </div>
-                             </div>
+                            </div>
                             <!-- End Single Item -->
-                             <!-- Single Item -->
-                             <div class="timeline-style-one-item wow fadeInUp">
+                            <!-- Single Item -->
+                            <div class="timeline-style-one-item wow fadeInUp">
                                 <div class="timeline-header">
                                     <div class="left">
                                         <h4>UI Designer</h4>
@@ -704,14 +738,17 @@
                                 </div>
                                 <div class="timeline-body">
                                     <p>
-                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit, laoreet smart software.
+                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam
+                                        sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                        hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit,
+                                        laoreet smart software.
                                     </p>
                                 </div>
-                             </div>
+                            </div>
                             <!-- End Single Item -->
                         </div>
                     </div>
-    
+
                     <div class="col-lg-6">
                         <h2>Education Background</h2>
                         <div class="time-style-one-items">
@@ -730,13 +767,16 @@
                                 </div>
                                 <div class="timeline-body">
                                     <p>
-                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit, laoreet smart software.
+                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam
+                                        sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                        hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit,
+                                        laoreet smart software.
                                     </p>
                                 </div>
-                             </div>
+                            </div>
                             <!-- End Single Item -->
-                             <!-- Single Item -->
-                             <div class="timeline-style-one-item wow fadeInUp">
+                            <!-- Single Item -->
+                            <div class="timeline-style-one-item wow fadeInUp">
                                 <div class="timeline-header">
                                     <div class="left">
                                         <h4>Graphic Design Course</h4>
@@ -750,13 +790,16 @@
                                 </div>
                                 <div class="timeline-body">
                                     <p>
-                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit, laoreet smart software.
+                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam
+                                        sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                        hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit,
+                                        laoreet smart software.
                                     </p>
                                 </div>
-                             </div>
+                            </div>
                             <!-- End Single Item -->
-                             <!-- Single Item -->
-                             <div class="timeline-style-one-item wow fadeInUp">
+                            <!-- Single Item -->
+                            <div class="timeline-style-one-item wow fadeInUp">
                                 <div class="timeline-header">
                                     <div class="left">
                                         <h4>Web design course</h4>
@@ -770,14 +813,17 @@
                                 </div>
                                 <div class="timeline-body">
                                     <p>
-                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit, laoreet smart software.
+                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam
+                                        sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                        hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit,
+                                        laoreet smart software.
                                     </p>
                                 </div>
-                             </div>
+                            </div>
                             <!-- End Single Item -->
                         </div>
                     </div>
-    
+
                 </div>
             </div>
         </div>
@@ -792,7 +838,7 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="site-heading text-center">
                         <h4 class="sub-title">Partner</h4>
-                        <h2 class="title">With The World Premier 80+ Brands</h2>
+                        <h2 class="title">Proud to Collaborate with Our Friends & Partners</h2>
                     </div>
                 </div>
             </div>
@@ -803,39 +849,22 @@
                     <div class="partner-style-one-items">
                         <!-- Single Item -->
                         <div class="partner-style-one-item wow fadeInLeft">
-                            <img src="assets/img/partner/1.png" alt="Image Not Found">
+                            <img class="partner-logo" src="assets/img/partner/abdinor.png" alt="Image Not Found">
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
                         <div class="partner-style-one-item wow fadeInLeft">
-                            <img src="assets/img/partner/2.png" alt="Image Not Found">
+                            <img class="partner-logo" src="assets/img/partner/albasrawie.png" alt="Image Not Found">
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
                         <div class="partner-style-one-item wow fadeInLeft">
-                            <img src="assets/img/partner/3.png" alt="Image Not Found">
+                            <img class="partner-logo" src="assets/img/partner/3.png" alt="Image Not Found">
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
                         <div class="partner-style-one-item wow fadeInLeft">
-                            <img src="assets/img/partner/4.png" alt="Image Not Found">
-                        </div>
-                        <!-- End Single Item -->
-                    </div>
-                    <div class="partner-style-one-items">
-                        <!-- Single Item -->
-                        <div class="partner-style-one-item wow fadeInRight">
-                            <img src="assets/img/partner/5.png" alt="Image Not Found">
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="partner-style-one-item wow fadeInRight">
-                            <img src="assets/img/partner/6.png" alt="Image Not Found">
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="partner-style-one-item wow fadeInRight">
-                            <img src="assets/img/partner/7.png" alt="Image Not Found">
+                            <img class="partner-logo" src="assets/img/partner/4.png" alt="Image Not Found">
                         </div>
                         <!-- End Single Item -->
                     </div>
@@ -844,6 +873,8 @@
         </div>
     </div>
     <!-- End Partner -->
+
+
 
     <!-- Start Testimonial 
     ============================================= -->
@@ -893,7 +924,10 @@
                                                     </div>
                                                 </div>
                                                 <p>
-                                                    "Thanks to your web agency team for their professional work. The website they created for my business exceeded my expectations, and my clients have given positive feedback about its design and user-friendliness."
+                                                    "Thanks to your web agency team for their professional work. The
+                                                    website they created for my business exceeded my expectations, and
+                                                    my clients have given positive feedback about its design and
+                                                    user-friendliness."
                                                 </p>
                                                 <div class="tm-footer">
                                                     <div class="provider">
@@ -932,7 +966,10 @@
                                                     </div>
                                                 </div>
                                                 <p>
-                                                    "Thanks to your web agency team for their professional work. The website they created for my business exceeded my expectations, and my clients have given positive feedback about its design and user-friendliness."
+                                                    "Thanks to your web agency team for their professional work. The
+                                                    website they created for my business exceeded my expectations, and
+                                                    my clients have given positive feedback about its design and
+                                                    user-friendliness."
                                                 </p>
                                                 <div class="tm-footer">
                                                     <div class="provider">
@@ -946,7 +983,7 @@
                                     </div>
                                 </div>
                                 <!-- End Single item -->
-                                 <!-- Single item -->
+                                <!-- Single item -->
                                 <div class="swiper-slide">
                                     <div class="testimonial-style-one">
                                         <div class="item">
@@ -971,7 +1008,10 @@
                                                     </div>
                                                 </div>
                                                 <p>
-                                                    "Thanks to your web agency team for their professional work. The website they created for my business exceeded my expectations, and my clients have given positive feedback about its design and user-friendliness."
+                                                    "Thanks to your web agency team for their professional work. The
+                                                    website they created for my business exceeded my expectations, and
+                                                    my clients have given positive feedback about its design and
+                                                    user-friendliness."
                                                 </p>
                                                 <div class="tm-footer">
                                                     <div class="provider">
@@ -986,7 +1026,7 @@
                                 </div>
                                 <!-- End Single item -->
                             </div>
-    
+
                         </div>
                         <!-- Navigation -->
                         <div class="testimonial-pagination">
@@ -1044,15 +1084,16 @@
                                 <li>Responsive Design</li>
                             </ul>
                             <div class="button mt-30">
-                                <a class="btn-style-regular" href="#contact"><span>Order Now</span> <i class="fas fa-arrow-right"></i></a>
+                                <a class="btn-style-regular" href="#contact"><span>Order Now</span> <i
+                                        class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <!-- End Single Item -->
                 <!-- Single Item -->
-                 <div class="col-lg-6 pricing-one-single">
+                <div class="col-lg-6 pricing-one-single">
                     <div class="pricing-style-one wow fadeInUp" data-wow-delay="200ms">
                         <div class="pricing-top">
                             <div class="right">
@@ -1078,11 +1119,12 @@
                                 <li>Responsive Design</li>
                             </ul>
                             <div class="button mt-30">
-                                <a class="btn-style-regular btn-border" href="#contact"><span>Order Now</span> <i class="fas fa-arrow-right"></i></a>
+                                <a class="btn-style-regular btn-border" href="#contact"><span>Order Now</span> <i
+                                        class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
-                 </div>
+                </div>
                 <!-- End Single Item -->
             </div>
         </div>
@@ -1112,42 +1154,58 @@
                         <div class="accordion mt-30" id="faqAccordion">
                             <div class="accordion-item accordion-style-one">
                                 <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         May i see your work samples?
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
                                         <p>
-                                            New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past.
+                                            New had happen unable uneasy. Drawings can followed improved out sociable
+                                            not. Earnestly so do instantly pretended. See general few civilly amiable
+                                            pleased account carried. Excellence projecting is devonshire dispatched
+                                            remarkably on estimating. Side in so life past.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item accordion-style-one">
                                 <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         What are your rates?
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
                                         <p>
-                                            New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past.
+                                            New had happen unable uneasy. Drawings can followed improved out sociable
+                                            not. Earnestly so do instantly pretended. See general few civilly amiable
+                                            pleased account carried. Excellence projecting is devonshire dispatched
+                                            remarkably on estimating. Side in so life past.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item accordion-style-one">
                                 <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
                                         How do you prefer to communicate?
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
                                         <p>
-                                            New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past.
+                                            New had happen unable uneasy. Drawings can followed improved out sociable
+                                            not. Earnestly so do instantly pretended. See general few civilly amiable
+                                            pleased account carried. Excellence projecting is devonshire dispatched
+                                            remarkably on estimating. Side in so life past.
                                         </p>
                                     </div>
                                 </div>
@@ -1162,18 +1220,18 @@
 
     <!-- Start Contact 
     ============================================= -->
-    <div id="contact" class="contact-style-one-area default-padding bg-gray">
+    <div id="contact" class="contact-style-one-area default-padding">
         <div class="container">
             <div class="contact-style-one-items">
-                
                 <h1 class="fixed-text">Contact Me</h1>
-                <div class="row justify-content-center">
+                <div id="contact-row" class="row justify-content-center">
                     <div class="col-lg-6">
                         <form action="" method="POST" class="contact-form contact-form">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                        <input class="form-control" id="name" name="name" placeholder="Name"
+                                            type="text">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
@@ -1181,13 +1239,15 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                        <input class="form-control" id="email" name="email" placeholder="Email*"
+                                            type="email">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
+                                        <input class="form-control" id="phone" name="phone" placeholder="Phone"
+                                            type="text">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
@@ -1195,7 +1255,8 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                        <textarea class="form-control" id="comments" name="comments"
+                                            placeholder="Tell Us About Project *"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -1214,8 +1275,11 @@
                     </div>
                 </div>
 
-               
-
+                <!-- Dark Mode Image Section -->
+                <div id="dark-image-section" class="contact-illustration">
+                    <img src="assets/img/illustration/dark.png" alt="Image Not Found">
+                    <img src="assets/img/shape/13.png" alt="Image Not Found">
+                </div>
             </div>
         </div>
     </div>
@@ -1251,9 +1315,11 @@
                             </ul>
                             <div class="info">
                                 <h4 class="blog-title">
-                                    <a href="blog-single-with-sidebar.html">Picked up brussels burger signications with ham efforts.</a>
+                                    <a href="blog-single-with-sidebar.html">Picked up brussels burger signications with
+                                        ham efforts.</a>
                                 </h4>
-                                <a href="blog-single-with-sidebar.html" class="btn-read-more">Read More <i class="fas fa-long-arrow-right"></i></a>
+                                <a href="blog-single-with-sidebar.html" class="btn-read-more">Read More <i
+                                        class="fas fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1274,9 +1340,11 @@
                             </ul>
                             <div class="info">
                                 <h4 class="blog-title">
-                                    <a href="blog-single-with-sidebar.html">This prefabrice passive house is highly sustainable with intent</a>
+                                    <a href="blog-single-with-sidebar.html">This prefabrice passive house is highly
+                                        sustainable with intent</a>
                                 </h4>
-                                <a href="blog-single-with-sidebar.html" class="btn-read-more">Read More <i class="fas fa-long-arrow-right"></i></a>
+                                <a href="blog-single-with-sidebar.html" class="btn-read-more">Read More <i
+                                        class="fas fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1297,9 +1365,11 @@
                             </ul>
                             <div class="info">
                                 <h4 class="blog-title">
-                                    <a href="blog-single-with-sidebar.html">Announcing if attachment resolution sentim commercial.</a>
+                                    <a href="blog-single-with-sidebar.html">Announcing if attachment resolution sentim
+                                        commercial.</a>
                                 </h4>
-                                <a href="blog-single-with-sidebar.html" class="btn-read-more">Read More <i class="fas fa-long-arrow-right"></i></a>
+                                <a href="blog-single-with-sidebar.html" class="btn-read-more">Read More <i
+                                        class="fas fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1318,9 +1388,11 @@
                 <div class="col-xl-8 offset-xl-2">
                     <div class="promo-box-items text-center">
                         <h2>Hello👋i'm available for freelance work</h2>
-                        <h4>For quick response: <a href="skype:example123?chat"><i class="fab fa-skype"></i> Chat now</a></h4>
+                        <h4>For quick response: <a href="skype:example123?chat"><i class="fab fa-skype"></i> Chat
+                                now</a></h4>
                         <div class="button mt-40">
-                            <a class="btn-style-regular" href="#contact"><span>Hire Me Now </span> <i class="fas fa-arrow-right"></i></a>
+                            <a class="btn-style-regular" href="#contact"><span>Hire Me Now </span> <i
+                                    class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1344,14 +1416,16 @@
                             <li><a href="blog-with-sidebar.html">Blog</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
-                        <p>Copyright &copy; 2024 GaabShiineTechSolutions. All Rights Reserved</p>
+                        <p>Copyright &copy;
+                            <script>document.write(new Date().getFullYear())</script>. All Rights Reserved.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- End Footer -->
-    
+
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -1374,6 +1448,74 @@
     <script src="assets/js/jquery.circleType.js"></script>
     <script src="assets/js/typed.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        // Get the theme toggle elements
+const themeLink = document.getElementById('theme-toggle-link');
+const themeIcon = document.getElementById('theme-toggle-icon');
+const logo = document.getElementById('logo');
+const logoCollapse = document.getElementById('logo-collapse');
+const contactRow = document.getElementById('contact-row');
+
+// Check the user's theme preference from localStorage
+const currentTheme = localStorage.getItem('theme');
+
+// Apply the theme on initial load
+if (currentTheme === 'dark') {
+    document.body.classList.add('bg-dark');
+    themeIcon.classList.remove('fa-moon');
+    themeIcon.classList.add('fa-sun');
+    // Change logo for dark mode (both header and collapse section)
+    logo.src = 'assets/img/my_logo_orange.png';  // Use the dark logo
+    logoCollapse.src = 'assets/img/my_logo_orange.png';  // Use the dark logo for collapsed menu
+    // Update the row alignment to start in dark mode
+    contactRow.classList.remove('justify-content-center');
+    contactRow.classList.add('justify-content-start');
+} else {
+    document.body.classList.remove('bg-dark');
+    themeIcon.classList.remove('fa-sun');
+    themeIcon.classList.add('fa-moon');
+    // Change logo for light mode (both header and collapse section)
+    logo.src = 'assets/img/my_logo.png';  // Use the light logo
+    logoCollapse.src = 'assets/img/my_logo.png';  // Use the light logo for collapsed menu
+    // Update the row alignment to center in light mode
+    contactRow.classList.remove('justify-content-start');
+    contactRow.classList.add('justify-content-center');
+}
+
+// Toggle the theme on button click
+themeLink.addEventListener('click', () => {
+    const isDarkMode = document.body.classList.contains('bg-dark');
+
+    if (isDarkMode) {
+        // Switch to light mode
+        document.body.classList.remove('bg-dark');
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+        localStorage.setItem('theme', 'light'); // Save the preference
+        // Change logo for light mode
+        logo.src = 'assets/img/my_logo.png';  // Use the light logo
+        logoCollapse.src = 'assets/img/my_logo.png';  // Use the light logo for collapsed menu
+        // Update the row alignment to center in light mode
+        contactRow.classList.remove('justify-content-start');
+        contactRow.classList.add('justify-content-center');
+    } else {
+        // Switch to dark mode
+        document.body.classList.add('bg-dark');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+        localStorage.setItem('theme', 'dark'); // Save the preference
+        // Change logo for dark mode
+        logo.src = 'assets/img/my_logo_orange.png';  // Use the dark logo
+        logoCollapse.src = 'assets/img/my_logo_orange.png';  // Use the dark logo for collapsed menu
+        // Update the row alignment to start in dark mode
+        contactRow.classList.remove('justify-content-center');
+        contactRow.classList.add('justify-content-start');
+    }
+});
+
+
+
+    </script>
 
 </body>
 

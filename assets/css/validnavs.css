@@ -878,11 +878,12 @@ nav.navbar.navbar-default.validnavs li.dropdown ul.dropdown-menu.cart-list li.to
 }
 
 body {
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+    -ms-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+	
 }
 
 .side {
@@ -1205,10 +1206,24 @@ body.bg-dark.on-side nav.navbar::after {
 	left: 3px;
 }
 
+
+/* Apply the brightness filter and invert color for dark mode */
+body.bg-dark .partner-logo {
+    filter: brightness(0) invert(1); /* Darken logos and invert colors for dark mode */
+}
+#dark-image-section {
+    display: none;  /* Hide the dark image section by default */
+}
+
+
+
+
 .bg-dark .side .widget.newsletter form span.input-group-addon {
 	border-color: rgba(255, 255, 255, 0.3);
 }
-
+body.bg-dark #dark-image-section {
+    display: block;  /* Show the dark image section when in dark mode */
+}
 @media (min-width: 1200px) {
 	.attr-border .attr-nav {
 		position: relative;
@@ -3876,4 +3891,22 @@ nav.navbar.validnavs.nav-full-width {
 		box-shadow: none;
 		padding: 0;
 	}
+}
+/* Make theme toggle icon align with nav style */
+
+.theme-toggle-nav a {
+    font-size: 16px;
+    padding: 30px 15px;
+    color: var(--color-heading);
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;  /* Smooth transition on color change */
+}
+
+.theme-toggle-nav a:hover {
+    color: var(--blue);
+}
+
+.bg-dark .theme-toggle-nav a {
+    color: var(--white);
 }
